@@ -10,59 +10,568 @@
 <body>
     <h2 id="title">県管理河川(<p id="square-pink"></p>洪水予報河川<p id="square-blue"></p>水位周知河川)一覧表</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th colspan="4">観測点の情報</th>
-                <th colspan="2">最新情報</th>
-                <th colspan="4">水位危険度レベル</th>
-                <th rowspan="0">ホットライン<br>実状況</th>
-                <th rowspan="0">備考</th>
-            </tr>
-
-            <tr>
-                <th>管轄土木</th>
-                <th>観測所所在<br>市町名</th>
-                <th>河川名</th>
-                <th>観測点名</th>
-                <th>水位</th>
-                <th>観測時間</th>
-                <th>待機以下</th>
-                <th>氾濫注意水位<br>（氾濫注意情報）</th>
-                <th>水位</th>
-                <th>氾濫危険水位（氾濫注意情報）</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="0">01下田土木</td>
-                <td>01下田市</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-
-            </tr>
-            <tr>
-                <td>02東伊豆町</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-                <td>管轄土木</td>
-            </tr>
-        </tbody>
-    </table>   
+    <div class="wrapper">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">観測点の情報</th>
+                        <th colspan="2">最新情報</th>
+                        <th colspan="4">水位危険度レベル</th>
+                        <th rowspan="0">ホットライン<br>実状況</th>
+                        <th rowspan="0">備考</th>
+                    </tr>
+        
+                    <tr>
+                        <th>管轄土木</th>
+                        <th>観測所所在<br>市町名</th>
+                        <th>河川名</th>
+                        <th>観測点名</th>
+                        <th>水位</th>
+                        <th>観測時間</th>
+                        <th>待機以下</th>
+                        <th>氾濫注意水位<br>（氾濫注意情報）</th>
+                        <th>水位</th>
+                        <th>氾濫危険水位（氾濫注意情報）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="7">01下田土木</td>
+                        <td rowspan="2">01下田市</td>
+                        <td rowspan="2">稲生沢川</td>
+                        <td class="bridge">本郷橋</td>
+                        <td>3.40</td>
+                        <td>2024/1/9 8:00</td>
+                        <td></td>
+                        <td>3.00</td>
+                        <td>-</td>
+                        <td>3.90</td>
+                        <td>下田市</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="bridge">深根橋</td>
+                        <td>2.40</td>
+                        <td>2024/1/9 8:00</td>
+                        <td></td>
+                        <td>2.60</td>
+                        <td>-</td>
+                        <td>4.30</td>
+                        <td>下田市</td>
+                        <td></td>
+                    </tr>
+                    <tr id="empty">
+                        <td>02東伊豆町</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>03南伊豆町</td>
+                        <td>青野川</td>
+                        <td class="bridge">前原橋</td>
+                        <td>2.2</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>1.80</td>
+                        <td>2.60</td>
+                        <td>3.10</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>04河津町</td>
+                        <td>河津川</td>
+                        <td class="bridge">降大橋</td>
+                        <td>3.2</td>
+                        <td>2024/1/5 8:00</td>
+                        <td></td>
+                        <td>2.50</td>
+                        <td>3.10</td>
+                        <td>3.30</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>05松崎町</td>
+                        <td>那賀川</td>
+                        <td class="bridge">伏倉橋</td>
+                        <td>1.75</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>1.70</td>
+                        <td>1.80</td>
+                        <td>1.90</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>06西伊豆町</td>
+                        <td>仁科川</td>
+                        <td class="bridge">築地橋</td>
+                        <td>2.25</td>
+                        <td>2024/1/1 8:00</td>
+                        <td></td>
+                        <td>2.10</td>
+                        <td>2.20</td>
+                        <td>2.90</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="empty">
+                        <td rowspan="2" style="background-color: white;">02熱梅土木</td>
+                        <td>07熱海市</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>08伊東市</td>
+                        <td>伊東大川</td>
+                        <td class="bridge">岡橋</td>
+                        <td>4.5</td>
+                        <td>2024/1/4 8:00</td>
+                        <td></td>
+                        <td>5.50</td>
+                        <td>5.80</td>
+                        <td>6.10</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="14">03沼津土木</td>
+                        <td rowspan="2">09沼津市</td>
+                        <td>新中川</td>
+                        <td class="bridge">丸子橋</td>
+                        <td>1.5</td>
+                        <td>2024/1/15 8:00</td>
+                        <td></td>
+                        <td>1.80</td>
+                        <td>1.80</td>
+                        <td>2.73</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>高橋川</td>
+                        <td class="bridge">青野</td>
+                        <td>1.5</td>
+                        <td>2024/1/15 8:00</td>
+                        <td></td>
+                        <td>1.80</td>
+                        <td>2.20</td>
+                        <td>3.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="empty">
+                        <td>10清水町</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11裾野市</td>
+                        <td>黄瀬川</td>
+                        <td class="bridge">花園橋</td>
+                        <td>2.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.80</td>
+                        <td>-</td>
+                        <td>3.10</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12長泉町</td>
+                        <td rowspan="2">大場川</td>
+                        <td class="bridge">青木橋</td>
+                        <td>2.8</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>3.20</td>
+                        <td>-</td>
+                        <td>3.40</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>13三島市</td>
+                        <td class="bridge">下神川橋</td>
+                        <td>2.1</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.50</td>
+                        <td>-</td>
+                        <td>4.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14函南町</td>
+                        <td>来光川</td>
+                        <td class="bridge">観音橋</td>
+                        <td>1.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>1.70</td>
+                        <td>-</td>
+                        <td>1.90</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="empty">
+                        <td>15伊豆の国市</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">16伊豆市</td>
+                        <td>狩野川</td>
+                        <td class="bridge">嵯峨沢橋</td>
+                        <td>3.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.50</td>
+                        <td>3.20</td>
+                        <td>3.90</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>修善寺川</td>
+                        <td class="bridge">修善寺川橋</td>
+                        <td>2.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.30</td>
+                        <td>-</td>
+                        <td>2.50</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>大見川</td>
+                        <td class="bridge">梅木橋</td>
+                        <td>2.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.70</td>
+                        <td>3.10</td>
+                        <td>3.40</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>山川</td>
+                        <td class="bridge">金山橋</td>
+                        <td>2.36</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.25</td>
+                        <td>2.40</td>
+                        <td>2.60</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="empty">
+                        <td>17御殿場市</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >18小山町</td>
+                        <td>鮎沢川</td>
+                        <td class="bridge">小山</td>
+                        <td>2.0</td>
+                        <td>2024/1/17 8:00</td>
+                        <td></td>
+                        <td>1.90</td>
+                        <td>2.09</td>
+                        <td>2.28</td>
+                        <td></td>
+                        <td>R3.3指定</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">04富士土木</td>
+                        <td rowspan="4">19富士市</td>
+                        <td>潤井川</td>
+                        <td class="bridge">潤井川橋</td>
+                        <td>2.0</td>
+                        <td>2024/1/17 8:00</td>
+                        <td></td>
+                        <td>2.30</td>
+                        <td>-</td>
+                        <td>3.80</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>沼川</td>
+                        <td class="bridge">河合橋</td>
+                        <td>2.0</td>
+                        <td>2024/1/17 8:00</td>
+                        <td></td>
+                        <td>2.50</td>
+                        <td>-</td>
+                        <td>2.98</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>小潤井川</td>
+                        <td class="bridge">小潤井川</td>
+                        <td>1.75</td>
+                        <td>2024/1/18 8:00</td>
+                        <td></td>
+                        <td>1.80</td>
+                        <td>-</td>
+                        <td>2.35</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>赤淵川</td>
+                        <td class="bridge">花守橋</td>
+                        <td>2.60</td>
+                        <td>2024/1/15 8:00</td>
+                        <td></td>
+                        <td>2.84</td>
+                        <td>3.19</td>
+                        <td>3.34</td>
+                        <td></td>
+                        <td>R3.3指定</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">20富士宮市</td>
+                        <td rowspan="2">芝川</td>
+                        <td class="bridge">安居山</td>
+                        <td>1.0</td>
+                        <td>2024/1/18 8:00</td>
+                        <td></td>
+                        <td>0.90</td>
+                        <td>1.80</td>
+                        <td>2.10</td>
+                        <td></td>
+                        <td>R4.3指定</td>
+                    </tr>
+                    <tr>
+                        <td class="bridge">横手沢</td>
+                        <td>1.36</td>
+                        <td>2024/1/18 8:00</td>
+                        <td></td>
+                        <td>1.40</td>
+                        <td>1.60</td>
+                        <td>1.80</td>
+                        <td></td>
+                        <td>R4.3指定</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="9">05静岡土木</td>
+                        <td rowspan="9">21静岡市</td>
+                        <td rowspan="2">興津川</td>
+                        <td class="bridge">興津</td>
+                        <td>1.8</td>
+                        <td>2024/1/17 8:00</td>
+                        <td></td>
+                        <td>1.70</td>
+                        <td>-</td>
+                        <td>2.30</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="bridge">和田島橋</td>
+                        <td>2.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.60</td>
+                        <td>-</td>
+                        <td>2.90</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>庵原川</td>
+                        <td class="bridge">庵原</td>
+                        <td>2.8</td>
+                        <td>2024/1/17 8:00</td>
+                        <td></td>
+                        <td>3.00</td>
+                        <td>-</td>
+                        <td>3.20</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">巴川</td>
+                        <td class="bridge">能島</td>
+                        <td>2.8</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>3.16</td>
+                        <td>-</td>
+                        <td>3.40</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="bridge">上土</td>
+                        <td>2.5</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.70</td>
+                        <td>-</td>
+                        <td>3.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>長尾川</td>
+                        <td class="bridge">水梨橋</td>
+                        <td>2.0</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.20</td>
+                        <td>-</td>
+                        <td>2.30</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>丸子川</td>
+                        <td class="bridge">丸子</td>
+                        <td>2.0</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>2.40</td>
+                        <td>-</td>
+                        <td>2.70</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>藁科川</td>
+                        <td class="bridge">富沢橋</td>
+                        <td>3.0</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>4.00</td>
+                        <td>-</td>
+                        <td>4.08</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>足久保川</td>
+                        <td class="bridge">足久保</td>
+                        <td>1.0</td>
+                        <td>2024/1/19 8:00</td>
+                        <td></td>
+                        <td>1.22</td>
+                        <td>-</td>
+                        <td>1.43</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">観測点の情報</th>
+                        <th colspan="2">最新情報</th>
+                        <th colspan="4">水位危険度レベル</th>
+                        <th rowspan="0">ホットライン<br>実状況</th>
+                        <th rowspan="0">備考</th>
+                    </tr>
+        
+                    <tr>
+                        <th>管轄土木</th>
+                        <th>観測所所在<br>市町名</th>
+                        <th>河川名</th>
+                        <th>観測点名</th>
+                        <th>水位</th>
+                        <th>観測時間</th>
+                        <th>待機以下</th>
+                        <th>氾濫注意水位<br>（氾濫注意情報）</th>
+                        <th>水位</th>
+                        <th>氾濫危険水位（氾濫注意情報）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>０１さが</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+        
+                    </tr>
+                    <tr>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                        <td>管轄土木</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
 </body>
 </html>
