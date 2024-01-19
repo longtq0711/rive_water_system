@@ -205,6 +205,6 @@ tbody tr td:nth-last-child(3) {
   background-color: rgb(252, 186, 186);
 }
 
-tr.empty {
+.empty {
   background-color: rgb(165, 165, 165);
 }
