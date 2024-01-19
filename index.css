@@ -1,0 +1,15 @@
+#title {
+    display: inline-flex;
+}
+#title #square-pink {
+    margin: auto 5px ;
+    width: 20px;
+    height: 20px;
+    background: pink;
+}
+#title #square-blue {
+    margin: auto 5px ;
+    width: 20px;
+    height: 20px;
+    background: #a8c7fa;
+}
