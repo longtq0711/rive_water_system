@@ -146,6 +146,7 @@ th,
 td {
   border: 0.5px solid #000000;
   padding: 0.1rem;
+  width: 50px;
 }
 
 th {
@@ -234,12 +235,10 @@ tbody tr td:nth-last-child(3) {
 }
 @media (max-width: 1500px) {
   /* Smaller Resolution Desktops and Laptops */
-  .table-container-1{
+  .table-container-1,
+  .table-container-2 {
     width: 96%;
     display: -webkit-box;
-  }
-  .table-container-2{
-    width: 96%;
   }
   .table-container-2 thead {
     display: none;
